@@ -161,6 +161,19 @@ main > section{
   margin-bottom: 0;
 }
 
+#experience-badge{
+  padding: 45px 42px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.featured-architect img{
+  width: 100%;
+}
+
 /* some facts styles */
 
 .fact-number{
@@ -193,32 +206,59 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* Footer Design */
+
+.footer{
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 200px;
+  max-width: 1200px;
+  margin: 130px auto;
+  background-color: rgba(255, 244, 231, 1);
+  border-radius: 8px;
+
+}
+
+.footer-title{
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
 /* Responsive media query */
 
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links, 
-    .teams{
+    .teams,
+    .features{
       flex-direction: column;
     }
 
     .team-image-container, 
     .facts-container,
-    .sponsor-companies{
+    .sponsor-companies,
+    .features{
       grid-template-columns: repeat(1, 1fr);
     }
     .our-features{
       margin-left: 20px;
     }
-    .facts-container,{
+    .facts-container{
       justify-items: center;
-      gap: 24px;
+      gap: 20px;
     }
     .sponsor-companies{
       justify-items: center;
       gap: 50px;
     }
+    #experience-badge{
+      margin-left: 20px;
+      margin-top: 20px;
+    }
 }
+
+
+
 
 
 /* Medium size device */
